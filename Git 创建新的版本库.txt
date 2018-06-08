@@ -1,0 +1,18 @@
+$ git clone ssh://admin@192.168.100.228:29418/linuxserver.git
+$ cd linuxserver/
+$ git init
+$ touch cs.txt
+$ git add cs.txt
+$ git commit -m 'create lib'
+$ git remote add origin ssh://admin@192.168.100.228:29418/linuxserver.git
+fatal: remote origin already exists.
+$ git push -u origin master
+Password authentication
+Password:
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 206 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+remote: Updating references: 100% (1/1)
+To ssh://192.168.100.228:29418/linuxserver.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
